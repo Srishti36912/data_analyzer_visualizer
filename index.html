@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analyser and Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">AnalystAI</div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>About</li>
+      <li>Resources</li>
+      <li>Explore</li>
+      <li>Help</li>
+      <li>Contact Us</li>
+      <li>Pricing</li>
+    </ul>
+    <div class="nav-buttons">
+      <button class="login-btn">Log In</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+</div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- <span class="badge">🚀 Introducing Slack Agent</span> -->
+    <h1>Your<span class="highlight"> Personal Data Analyst</span></h1>
+    <p> 
+      Connect your data, and get insights in seconds.
+      No coding required.
+    </p>
+    <button class="cta-btn" onclick="scrollToSection()">Try for free →</button>
+
+  </section>
+
+  <!-- Image Section -->
+  <section class="image-section">
+    <img
+      src="Media-Data-Analysis.jpeg"
+      alt="Dashboard Preview"
+    />
+  </section>
+
+  <section class="form">
+    <div class="data">Provide Data</div>
+    <form id="analyzeForm" action="/analyze" method="POST" enctype="multipart/form-data">
+      <input class= "file-input"type="file" name="file" accept=".csv" required>
+      <button class="submit-btn" type="submit">Analyze Data</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 AnalystAI — All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
