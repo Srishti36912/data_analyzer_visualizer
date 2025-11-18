@@ -4,61 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data Analyser and Visualizer</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  
+  <!-- Navbar -->
   <div class="navbar">
     <div class="logo">AnalystAI</div>
     <ul class="nav-links">
-  <li><a href="/">Home</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a href="/resources">Resources</a></li>
-  <!-- <li><a href="/explore">Explore</a></li> -->
-  <li><a href="/help">Help</a></li>
-  <!-- <li><a href="/contact">Contact Us</a></li> -->
-  <!-- <li><a href="/pricing">Pricing</a></li> -->
-</ul>
-
+      <li>Home</li>
+      <li>About</li>
+      <li>Resources</li>
+      <li>Explore</li>
+      <li>Help</li>
+      <li>Contact Us</li>
+      <li>Pricing</li>
+    </ul>
     <div class="nav-buttons">
-      <!-- <button class="login-btn">Log In</button>
-      <button class="signup-btn">Sign Up</button> -->
+      <button id="loginButton" class="login-btn">Log In</button>
+      <button id="signupButton" class="signup-btn">Sign Up</button>
     </div>
-  </div>
 
-  
+</div>
+
+ <!-- <div id="loginModal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-overlay">
+        <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md transform transition-all scale-100">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Welcome Back</h2>
+            <p class="text-gray-600 mb-6">This is where your login form would go (Email/Password).</p>
+            
+            <div class="space-y-4">
+                <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                <input type="password" placeholder="Password" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <div class="flex justify-end space-x-3 mt-6">
+                <button onclick="closeModal()" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 transition">
+                    Cancel
+                </button>
+                <button onclick="console.log('User attempting login...')" class="px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+                    Log In
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Your <span class="highlight">Personal Data Analyst</span></h1>
-    <p>Connect your data, and get insights in seconds. No coding required.</p>
+    <!-- <span class="badge">🚀 Introducing Slack Agent</span> -->
+    <h1>Your<span class="highlight"> Personal Data Analyst</span></h1>
+    <p> 
+      Connect your data, and get insights in seconds.
+      No coding required.
+    </p>
     <button class="cta-btn" onclick="scrollToSection()">Try for free →</button>
+
   </section>
 
-  
+  <!-- Image Section -->
   <section class="image-section">
     <img
-      src="{{ url_for('static', filename='Media-Data-Analysis.jpeg') }}"
+      src="Media-Data-Analysis.jpeg"
       alt="Dashboard Preview"
     />
   </section>
 
-  
   <section class="form">
     <div class="data">Provide Data</div>
-
     <form id="analyzeForm" action="/analyze" method="POST" enctype="multipart/form-data">
-      <input class="file-input" type="file" name="file" accept=".csv" required>
+      <input class= "file-input"type="file" name="file" accept=".csv" required>
       <button class="submit-btn" type="submit">Analyze Data</button>
     </form>
-    <div id="result" style="margin-top: 20px; font-size: 18px; text-align:center;"></div>
   </section>
 
-  
+  <div class="section" id="features">
+<h2>Powerful Features</h2>
+<div class="features">
+<div class="card">Upload & Clean Data Easily</div>
+<div class="card">Auto-Generate Charts</div>
+<div class="card">AI-Powered Insights</div>
+<div class="card">Interactive Dashboards</div>
+</div>
+</div>
+
+
+<div class="section" id="how">
+<h2>How It Works</h2>
+<div class="steps">
+<div class="step">1. Upload your dataset</div>
+<div class="step">2. Choose analysis or charts</div>
+<div class="step">3. Get instant insights</div>
+</div>
+</div>
+
+
+<div class="section" id="pricing">
+<h2>Pricing Plans</h2>
+<p>Free • Pro • Business</p>
+</div>
+
+  <!-- Footer -->
   <footer class="footer">
     © 2025 AnalystAI — All rights reserved.
   </footer>
 
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="script.js"></script>
 </body>
 </html>
