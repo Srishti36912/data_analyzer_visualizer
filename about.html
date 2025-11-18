@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | AnalystAI</title>
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+
+<body>
+  <nav class="main-nav">
+    <div class="nav-left">
+        <a href="/" class="logo">AnalystAI</a>
+    </div>
+
+    <ul class="nav-center">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about" class="active">About</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/explore">Explore</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <a href="/login" class="btn-login">Log In</a>
+        <a href="/signup" class="btn-signup">Sign Up</a>
+    </div>
+</nav>
+
+
+<header>
+    About AnalystAI
+</header>
+
+<section id="about-section">
+    <h2>Who We Are</h2>
+    <p>
+        AnalystAI is a smart and powerful Data Analyzer & Visualization platform built by a dedicated team of developers.
+        Our goal is to make data analysis simple, accessible, and automated for everyone — students, developers, and professionals.
+    </p>
+</section>
+
+<h2>Meet Our Team</h2>
+
+<div class="team-container">
+
+    
+    <div class="team-card">
+        <!-- <img src="/static/images/member1.jpg" alt="Team Member"> -->
+        <h3>Srishti Tripathi</h3>
+        <h3>Priyanshu Sahai</h3>
+        <p class="role">Frontend Developer</p>
+        <p class="desc">Designed UI/UX, structure, responsiveness, and the complete website layout.</p>
+    </div>
+
+    
+    <div class="team-card">
+        <!-- <img src="/static/images/member2.jpg" alt="Team Member"> -->
+        <h3>Priyanshu Sahai</h3>
+        <p class="role">Backend Developer</p>
+        <p class="desc">Developed Flask routes, backend APIs, and handled app integration.</p>
+    </div>
+
+    
+    <div class="team-card">
+        <!-- <img src="/static/images/member3.jpg" alt="Team Member"> -->
+        <h3>Omi Mishra</h3>
+        <p class="role">Data Analyst</p>
+        <p class="desc">Built ML models, data preprocessing, cleaning, and visualizations.</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 AnalystAI | All Rights Reserved
+</footer>
+
+</body>
+</html>

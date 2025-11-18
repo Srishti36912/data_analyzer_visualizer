@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | AnalystAI</title>
+
+    <!-- Link your main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='resources.css') }}">
+
+    <style>
+        /* PAGE STYLING LIKE HOME */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .page-title {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1a73e8;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 17px;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR (SAME AS HOME PAGE) -->
+    <div class="navbar">
+        <div class="logo">AnalystAI</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/explore">Explore</a></li>
+            <li><a href="/help">Help</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="login-btn">Log In</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- HEADER LIKE HOME HERO -->
+    <div class="page-title">
+        Resources & Learning Hub
+    </div>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>📘 Documentation & Official References</h2>
+            <ul>
+                <li><a href="https://docs.python.org/" target="_blank">Python Documentation</a></li>
+                <li><a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Docs</a></li>
+                <li><a href="https://numpy.org/doc/" target="_blank">NumPy Docs</a></li>
+                <li><a href="https://matplotlib.org/stable/" target="_blank">Matplotlib Docs</a></li>
+                <li><a href="https://scikit-learn.org/stable/" target="_blank">Scikit-Learn Docs</a></li>
+                <li><a href="https://flask.palletsprojects.com/" target="_blank">Flask Documentation</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎓 Learning Resources</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">Python – freeCodeCamp</a></li>
+                <li><a href="https://www.youtube.com/watch?v=vmEHCJofslg" target="_blank">Pandas – Corey Schafer</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7eh4d6sabA0" target="_blank">Machine Learning – Simplilearn</a></li>
+                <li><a href="https://www.youtube.com/watch?v=oaJq1mQ3dFI" target="_blank">Statistics – Khan Academy</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🧰 Tools Used in This Project</h2>
+            <ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Matplotlib</li>
+                <li>YData-Profiling</li>
+                <li>HTML, CSS, JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📂 Dataset Sources</h2>
+            <ul>
+                <li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a></li>
+                <li><a href="https://archive.ics.uci.edu/" target="_blank">UCI Machine Learning Repository</a></li>
+                <li><a href="https://datasetsearch.research.google.com/" target="_blank">Google Dataset Search</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        © 2025 AnalystAI — All rights reserved.
+    </footer>
+
+</body>
+</html>
